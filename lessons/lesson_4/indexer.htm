@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button-container{
+            background-color:red;
+            color: black;
+            text-align:center;
+            border-radius: 15px;
+            width:100px;
+        }
+        .link-button{
+            color: black;
+            text-decoration: none;
+            font-family: Arial,Helvetica,sans-serif;
+        }
+        button{
+            background-color:red;
+            color: black;
+            text-align:center;
+            border-radius: 15px;
+            width:100px;
+            border:none;
+            margin:5px auto;
+            font-family: Arial,Helvetica,sans-serif;
+            font-size:1em;
+            transition:all 0.8s ease-in 0s;
+        }
+        button:hover{
+            background-color: chocolate;
+            color:cornflowerblue;
+        }
+        .example{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition:all 0.7s ease 0s;
+            margin:3px;
+            transform-origin: top left;
+        }
+        .translate:hover{
+            transform:translate(25px,20px);
+        }
+        .scale:hover{
+            transform:scale(105%);
+        }
+        .rotate:hover{
+            transform: rotate(-60deg);
+        }
+        .rotateX:hover{
+            transform:rotateX(90deg);
+        }
+        .rotateY:hover{
+            transform: rotateY(60deg);
+        }
+        .rotateZ:hover{
+            transform:rotateZ(120deg) scale(105%);
+        }
+        .skew:hover{
+            transform:skew(50deg,10deg);
+        }
+        .circle-container{
+            width: 400px;
+            height:400px;
+            border:black solid 1px;
+            background-color: burlywood;
+        }
+        .circle{
+            width:50px;
+            height:50px;
+            border-radius:100%;
+            background-color: cornflowerblue;
+            margin: 5px;
+            animation-name: circle-anim;
+            animation-duration: 1s;
+            animation-fill-mode:forwards;
+            /* animation-iteration-count: infinite; */
+        }
+
+        @keyframes circle-anim {
+            0%{
+                transform: translate(0,0);
+                background-color: blue;
+            }
+            25%{
+                transform:translate(338px,0);
+                background-color: cyan;
+            }
+            50%{
+                transform: translate(338px,338px);
+                background-color: pink;
+            }
+            75%{
+                transform: translate(0,338px);
+                background-color:red;
+            }
+            100%{
+                transform:translate(0,0);
+                background-color:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="circle-container">
+    <div class="circle"></div>
+</div>
+
+
+<div class="example scale"></div>
+
+<div class ="example translate"></div>
+
+<div class="example rotate"></div>
+
+<div class="example rotateX"></div>
+
+<div class="example rotateY"></div>
+
+<div class="example rotateZ"></div>
+
+<div class="example skew"></div>
+
+
+    <p><a target = "_blank" 
+        href="https://gemini.google.com/?hl=uk">gemini link hyperlink</a></p>
+    
+    <button>Натисни</button>
+
+
+    <div class="button-container">
+        <a href="#" class = "link-button">Натисни!</a>
+    </div>
+</body>
+</html>

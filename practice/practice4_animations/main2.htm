@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .scale:hover{
-            transform:scale(105%);}
-        .img-new {opacity: 1;}
-        .scale{ list-style-image: url('./resources/1fa76webp.png'); }
+    <title>Жива іконка</title>
 
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f3f3f3;
+        }
+
+        .box{
+            position: relative;
+            width: 220px;
+            height: 220px;
+        }
+
+        .gray{
+            position: absolute;
+            width: 120px;
+            left: 50px;
+            top: 50px;
+            transition: 0s;
+        }
+
+        .red{
+            position: absolute;
+            width: 220px;
+            opacity: 0;
+            transition: 5s;
+        }
+
+        .box:hover .red{
+            opacity: 1;
+        }
+
+        .box:hover .gray{
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
 
+    <div class="box">
 
+        <img src="./resources/1fa76webp.png" class="gray" alt="gray">
+        <img src="./resources/favorites.png" class="red" alt="red">
 
-    <div class="hover-image">
-        <img src="1fa76webp.jpg" class="img-old" alt="">
-        <!-- <img src="favorites.jpg" class="img-new" alt=""> -->
-      </div>
-
-
+    </div>
 
 </body>
 </html>

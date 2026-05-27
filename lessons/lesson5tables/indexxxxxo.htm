@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td>img{
+             width:150px;
+        }
+        table{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        td:first-child{
+            text-align:center;
+        }
+        th,td{
+            border:1px solid black;
+            padding:0.4em
+        }
+        /* tr:not(:first-child){
+            height:50px
+        } */
+         thead{
+            background-color:aquamarine;
+         }
+         tfoot{
+            text-align:center;
+            background-color: aqua;
+         }
+         tfoot>tr{
+            padding:0;
+         }
+         .highlight{
+            background-color: green;
+         }
+         .empty-cells-table{
+            border-collapse: separate;
+            empty-cells: hide;
+
+         }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>users</caption>
+        <colgroup>
+        <col>
+        <col class="highlight">
+        <col>
+        </colgroup>
+        <thead>
+            <tr>
+            <th>avatar</th>
+            <th>name</th>
+            <th>Email</th>
+            <tr>
+        </thead>
+        <tbody>
+                <td><img src="./smileface.jpg" alt=""></td>
+                <td><span>Mr.Blue</span></td>
+                <td><a href="mailto:mr.blue@gmail.com">mr.blue@gmail.com</a></td>
+                <td><a href=""></a>
+                </td>
+            </tr>
+                <tr><td><img src="./cat_box_64.png" alt=""></td>
+                <td><span>Mr.Not notBlue</span></td>
+                <td><a href="mailto:mr.blue@gmail.com">mr.notblue@gmail.com</a></td>
+                <td><a href=""></a></tr>
+            </tr>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr></tr>
+    </tfoot>
+    </table>
+
+
+    <table>
+        <tr>
+            <th cowspan="2">Full name</th>
+            <th>Age</th>
+    </tr>
+    <tr>
+        <td>
+            Jill
+        </td>
+        <td>
+            Smith
+        </td>
+        <td>43</td>
+    </tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+</table>
+
+
+
+<table>
+    <tr>
+        <th>NAme</th>
+        <td>Jill Smith</td>
+    </tr>
+    <tr><th rowspan="2">
+        Phone
+    </th>
+        <td>555-1234</td></tr>
+    <tr>
+        <td>555-8745</td>
+    </tr>
+</table>
+
+
+
+<table class="empty-cells-table">
+    <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+    </tr>
+    <tr>
+        <td>Lorem,ipsum dolor.</td>
+        <td>Lorem ipsum sit amit.</td>
+        <td>Lorem ipsum</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>lorem ipsum</td>
+        <td></td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

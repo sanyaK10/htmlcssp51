@@ -1,60 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentario</title>
+    <title>Document</title>
     <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-        *{
-            margin:0;
-            box-sizing:border-box
+        body {
+            height: 100vh;
         }
-        body{
-            height:100vh;
-        }
-        .width-demo{
-            min-width:900px;
-            max-width:1200px;
-            width:80%;
+
+        .width-demo {
+            min-width: 500px;
+            max-width: 900px;
+            width: 80%;
 
             min-height: 100%;
 
-            margin:auto;
+            margin: auto;
+
             background-color: aqua;
         }
-        .bordered{
-            width:500px;
+
+        .bordered {
+            width: 500px;
             height: 200px;
-            border: 2px solid black;
-            padding:20px;
+            border: solid black 5px;
+            padding: 20px;
         }
-        .overflow-auto{
+
+        .overflow-auto {
+            overflow: auto;
+            margin-top: 50px;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+            margin-top: 50px;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+            margin-top: 50px;
+        }
+
+        .container {
+            border: solid 1px black;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 10px;
             overflow:auto;
-            margin-top:50px;
+            background-color: cadetblue;
         }
-        .overflow-hidden{
-            overflow:hidden;
-            margin-top:50px;
+
+        .picture {
+            width: 100px;
+            height: 120px;
+
+            padding: 5px;
+            margin: 10px;
+
+            background-color: crimson;
+            float: left;
         }
     </style>
 </head>
 
 <body>
     <div class="width-demo">
-        <div class="bordered">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ipsam.
+        <div class="container">
+            <div class="picture">float: right;</div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam totam adipisci laudantium, cum id non
+                modi veritatis quis inventore culpa aliquam quod voluptatibus fugiat fugit sed et aperiam? Doloremque
+                ullam ex nisi itaque placeat porro hic consequatur ipsum, id sit iste exercitationem totam sequi atque
+                quas eius magni cumque quia magnam soluta? Neque quisquam excepturi tempora ut debitis unde eaque
+                nesciunt consequatur id animi. Laudantium a debitis distinctio, enim dolores dolorum est at quas vero?
+                Vero dolore odit, ea veniam unde quod repellendus cum voluptatum laboriosam natus error, quos incidunt!
             </p>
-        </div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam minus dolor voluptatibus nostrum consequuntur atque eum accusamus. Magnam eius, laboriosam natus explicabo hic magni. Earum distinctio voluptatem consequatur impedit totam corrupti, obcaecati aliquid hic quo. Eos, ipsa nostrum omnis eveniet quidem dolorem distinctio sunt dolore ducimus aspernatur, expedita atque!</p></div>
-
-        <div class="border overflow-auto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam minus dolor voluptatibus nostrum consequuntur atque eum accusamus. Magnam eius, laboriosam natus explicabo hic magni. Earum distinctio voluptatem consequatur impedit totam corrupti, obcaecati aliquid hic quo. Eos, ipsa nostrum omnis eveniet quidem dolorem distinctio sunt dolore ducimus aspernatur, expedita atque!</p>
         </div>
 
-
-<div class="border overflow-hidden">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam minus dolor voluptatibus nostrum consequuntur atque eum accusamus. Magnam eius, laboriosam natus explicabo hic magni. Earum distinctio voluptatem consequatur impedit totam corrupti, obcaecati aliquid hic quo. Eos, ipsa nostrum omnis eveniet quidem dolorem distinctio sunt dolore ducimus aspernatur, expedita atque!</p>
+        <!-- <div class="bordered">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi illo consequatur assumenda sapiente!
+                Eveniet voluptas tenetur inventore ad saepe laboriosam consectetur, non culpa error consequuntur harum
+                accusamus ullam hic cumque tempore vel ea veritatis quaerat laudantium quasi enim asperiores aliquid quo
+                excepturi! Veritatis aut libero voluptatem enim dolore reiciendis impedit quas maiores sint, eius
+                obcaecati explicabo adipisci accusantium nihil qui assumenda autem dolor temporibus quae quod illum,
+                porro animi laborum. Iste perspiciatis rem ex vel repudiandae deserunt vitae! Consequuntur, tenetur?
+            </p>
         </div>
+
+        <div class="bordered overflow-auto">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi illo consequatur assumenda sapiente!
+                Eveniet voluptas tenetur inventore ad saepe laboriosam consectetur, non culpa error consequuntur harum
+                accusamus ullam hic cumque tempore vel ea veritatis quaerat laudantium quasi enim asperiores aliquid quo
+                excepturi! Veritatis aut libero voluptatem enim dolore reiciendis impedit quas maiores sint, eius
+                obcaecati explicabo adipisci accusantium nihil qui assumenda autem dolor temporibus quae quod illum,
+                porro animi laborum. Iste perspiciatis rem ex vel repudiandae deserunt vitae! Consequuntur, tenetur?
+            </p>
+        </div>
+
+        <div class="bordered overflow-hidden">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi illo consequatur assumenda sapiente!
+                Eveniet voluptas tenetur inventore ad saepe laboriosam consectetur, non culpa error consequuntur harum
+                accusamus ullam hic cumque tempore vel ea veritatis quaerat laudantium quasi enim asperiores aliquid quo
+                excepturi! Veritatis aut libero voluptatem enim dolore reiciendis impedit quas maiores sint, eius
+                obcaecati explicabo adipisci accusantium nihil qui assumenda autem dolor temporibus quae quod illum,
+                porro animi laborum. Iste perspiciatis rem ex vel repudiandae deserunt vitae! Consequuntur, tenetur?
+            </p>
+        </div>
+
+        <div class="bordered overflow-scroll">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi illo consequatur assumenda sapiente!
+                Eveniet voluptas tenetur inventore ad saepe laboriosam consectetur, non culpa error consequuntur harum
+                accusamus ullam hic cumque tempore vel ea veritatis quaerat laudantium quasi enim asperiores aliquid quo
+                excepturi! Veritatis aut libero voluptatem enim dolore reiciendis impedit quas maiores sint, eius
+                obcaecati explicabo adipisci accusantium nihil qui assumenda autem dolor temporibus quae quod illum,
+                porro animi laborum. Iste perspiciatis rem ex vel repudiandae deserunt vitae! Consequuntur, tenetur?
+            </p>
+        </div> -->
+
+        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores fuga quam ducimus necessitatibus,
+            nesciunt placeat id officiis beatae officia soluta maiores animi aspernatur non libero ullam vero accusamus
+            nihil. Possimus nisi, rem optio quas nulla ullam aperiam repudiandae reiciendis impedit alias voluptate
+            obcaecati neque inventore officiis dicta perferendis facilis velit!</p> -->
+    </div>
+
+    <!-- <header>
+
+    </header>
+    <main>
+        <aside></aside>
+        <article></article>
+        <section></section>
+    </main>
+    <footer>
+
+    </footer> -->
+</body>
+
+</html>
 
 
 

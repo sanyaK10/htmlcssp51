@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .div-demo{
+            background-color: darksalmon;
+            border:solid black 2px;
+            width:200px;
+            height:50px;
+            text-align:center;
+        }
+        .pos-stat{
+            position:static;
+        }
+        .pos-rel{
+            position:relative;
+            left:50px;
+            /* right:60px; */
+            top: 100px;
+            /* bottom:100px; */
+        }
+        .pos-fixed{
+            position:fixed;
+            top:500px;
+            right:200px;
+        }
+        .top-fixed{
+            position:fixed;
+            top:0;
+        }
+        .rel-parent{
+            width:400px;
+            height:150px;
+            border:solid 1px black;
+        }
+        .pos-abs{
+            position:absolute;
+            left:50px;
+        }
+        .pos-sticky{
+            position:sticky;
+            top:0;
+            /* z-index:-10; */
+        }
+    </style>
+</head>
+<body>
+    <h1>позиціонування</h1>
+    <h2>статичне позиціонування</h2>
+    <div class="div-demo pos-stat">position: static;</div>
+    <h2>відносне позиціонування</h2>
+    <div class="div-demo pos-rel">position:relative</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab, sit minus modi enim cumque aut illum laudantium repudiandae dolore rem dignissimos repellat ea harum beatae, quibusdam exercitationem. Eaque velit voluptatum fuga eum enim necessitatibus dignissimos, reiciendis quisquam illum, aperiam tempore rem explicabo inventore consequatur esse quod dolore minus sapiente odio repudiandae ut autem cupiditate itaque? Doloribus repellendus voluptas possimus incidunt soluta ea tempore deleniti aliquid obcaecati optio aut blanditiis accusantium, rerum quisquam corrupti consequatur quidem facere quos rem. Perferendis, nisi delectus! Provident neque distinctio dolor libero tempore dignissimos. Doloremque placeat provident magnam cumque. Nihil, consectetur nesciunt! Labore, necessitatibus minus.</p>
+
+    <div class="div-demo pos-fixed">position:fixd</div>
+
+    <!-- <div class="div-demo top-fixed">fixed on the top</div> -->
+
+    <div class="rel-parent">
+        <!-- <div class="div-demo pos-abs">position:absolute</div> -->
+    </div>
+
+    <div class="div-demo pos-abs">position:absolute</div>
+
+    <div class="div-demo pos-sticky">position:sticky</div>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis eius est alias quod perspiciatis asperiores quibusdam, temporibus aliquam maxime quisquam harum, quam ab consectetur magni fugiat, sapiente blanditiis commodi voluptas animi. Cumque quas asperiores eum adipisci, voluptas dolor iure, tempore officia tempora deleniti, eveniet ut. Dolor labore blanditiis, impedit facere harum suscipit hic consectetur fugit pariatur quam at, tempore sed repellendus veritatis vitae! Veniam hic quasi atque eos quos odio eum error? Blanditiis, similique? Voluptate, error adipisci. Aspernatur, molestias ea. Tempora ad fugit optio ipsa suscipit accusantium est voluptatem? Doloremque repudiandae voluptates amet blanditiis reprehenderit iusto dolorem ratione dignissimos accusamus.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, natus obcaecati hic assumenda deserunt commodi illum animi quas soluta fugiat, veritatis, ea officia doloremque aspernatur harum expedita ipsam! Vitae fugiat dolore reprehenderit unde illo iste odio fuga laborum fugit quas, excepturi harum itaque possimus minima, perferendis exercitationem dolor omnis! Explicabo id, rerum aliquam nesciunt tempora, nihil assumenda placeat amet nisi quae quisquam ipsum veritatis consectetur veniam voluptate rem itaque sint eveniet quam alias perspiciatis sunt voluptates consequatur. Autem illo aut neque ab culpa fuga officia animi quam accusantium ratione dicta eum dolorum rerum atque reprehenderit corrupti, sunt iste, nostrum non dolorem? Repellat accusamus similique fuga nisi optio, quia alias quos maxime at asperiores hic sunt aut molestiae blanditiis saepe sed libero enim ratione magnam accusantium provident. Debitis repudiandae architecto iste error cumque hic sint numquam officia molestias distinctio. Nisi molestiae quibusdam doloribus minima ea, saepe nam assumenda nihil laudantium error ullam tempore maiores libero possimus deserunt nostrum vero facere praesentium corporis explicabo. Voluptatibus, laudantium! Illo sunt perspiciatis dolore corrupti deleniti assumenda, dolorem in voluptas ex, debitis quae rem, placeat eius incidunt. Saepe aspernatur quaerat commodi nam, quos reiciendis distinctio deserunt necessitatibus ut in soluta mollitia esse et debitis, molestias magni?</p>
+    
+</body>
+</html>

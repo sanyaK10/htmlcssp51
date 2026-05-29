@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Практичне завдання 1</title>
+    <style>
+        .seasons-wrapper {
+            background-color: #f0f0f0;
+            padding: 20px 40px;
+            width: 300px;
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .seasons-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .season-item {
+            font-size: 15px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .season-item::before {
+            content: "❯ ";
+            color: #555;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .months-list {
+            padding-left: 25px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .months-list li {
+            margin-bottom: 3px;
+        }
+
+        .winter-months { list-style-image: url('./resources/winter_16.png'); }
+        .spring-months { list-style-image: url('./resources/spring_16.png'); }
+        .summer-months { list-style-image: url('./resources/summer_16.png'); }
+        .autumn-months { list-style-image: url('./resources/autumn_16.png'); }
+    </style>
+</head>
+<body>
+
+    <div class="seasons-wrapper">
+        <div class="title">Seasons</div>
+        
+        <ul class="seasons-list">
+            <li class="season-item">
+                Winter
+                <ul class="months-list winter-months">
+                    <li>December</li>
+                    <li>January</li>
+                    <li>February</li>
+                </ul>
+            </li>
+            
+            <li class="season-item">
+                Spring
+                <ul class="months-list spring-months">
+                    <li>March</li>
+                    <li>April</li>
+                    <li>May</li>
+                </ul>
+            </li>
+            
+            <li class="season-item">
+                Summer
+                <ul class="months-list summer-months">
+                    <li>June</li>
+                    <li>July</li>
+                    <li>August</li>
+                </ul>
+            </li>
+            
+            <li class="season-item">
+                Autumn
+                <ul class="months-list autumn-months">
+                    <li>September</li>
+                    <li>October</li>
+                    <li>November</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

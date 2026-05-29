@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./resources/smileface.jpg">
+    <style>
+        .bg-green{
+            background-color: red;
+        }
+        .color-red{
+            color:crimson;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            background-color: blanchedalmond;
+        }/*
+        .img-container{
+            text-align:center;
+        }*/
+        img {
+            display:block;
+            width: 40%;
+            height:auto;
+            margin:5px auto;
+            /* padding : 5px; */
+            border-style:solid;
+            border-color:black;
+            border-width: 2px;
+            border-radius: 15px;
+            box-shadow:2px 2px 15px black;
+        }
+        .circle{
+            width:200px;
+            height:100px;
+            /* border-radius: 100%; */
+            /* background-color: brown; */
+            border:soled black 2px;
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: center center;
+            background-image:url("./resources/smileface.jpg");
+        }
+
+        .gradient{
+            width:150px;
+            height: 200px;
+            /* background:linear-gradient(to right,blue,#ff6734,pink); */
+            /* background: radial-gradient(circle at top left ,blue 1%,pink); */
+             background:conic-gradient(red,yellow,blue,red);
+            /* background: linear-gradient(
+                            45deg,
+                            rgba(0,0,255,0.631),
+                            #ff67346e,
+                            rgba(255,192,203,0.511)
+
+                        ) */
+            
+        }
+        iframe{
+            width:100%;
+            height:auto;
+            border:solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Графіка в веб дизайні</h1>
+    <div class="img-container">
+        <img src="./resources/smileface.jpg" alt="smileface"
+        width="500" heights="350">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, accusamus.</p>
+    </div>
+
+    <div class="circle"></div>
+
+    <div class="gradient"></div>
+
+    <p class="bg-green ,color-red"></p>
+    <iframe src="second_page.htm" frameborder="0"></iframe>
+    <iframe src="" frameborder="0"></iframe>
+</body><iframe width="806" height="561" src="https://www.youtube.com/embed/R-hYM3BqTbA?list=RDR-hYM3BqTbA" title="Self Aware" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</html>

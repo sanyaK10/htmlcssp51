@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея котів</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: blanchedalmond;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            display: block;
+            width: 300px;
+            height: 300px;
+            margin: 10px auto;
+            border: solid 2px black;
+            border-radius: 15px;
+            box-shadow: 2px 2px 15px black;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .thumbnails img {
+            display: block;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border: solid 2px black;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .thumbnails img:hover {
+            border-color: crimson;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Графіка в веб дизайні</h1>
+
+    <iframe src="./resources/cat_tied_256.png" name="main_view"></iframe>
+
+    <ul class="thumbnails">
+        <li>
+            <a href="./resources/cat_tied_256.png" target="main_view">
+                <img src="./resources/cat_tied_64.png" alt="Кіт 1">
+            </a>
+        </li>
+        <li>
+            <a href="./resources/cat_box_256.png" target="main_view">
+                <img src="./resources/cat_box_64.png" alt="Кіт 2">
+            </a>
+        </li>
+        <li>
+            <a href="./resources/cat_clean_256.png" target="main_view">
+                <img src="./resources/cat_clean_64.png" alt="Кіт 3">
+            </a>
+        </li>
+        <li>
+            <a href="./resources/cat_cage_256.png" target="main_view">
+                <img src="./resources/cat_cage_64.png" alt="Кіт 4">
+            </a>
+        </li>
+        <li>
+            <a href="./resources/cat_eyes_256.png" target="main_view">
+                <img src="./resources/cat_eyes_64.png" alt="Кіт 5">
+            </a>
+        </li>
+        <li>
+            <a href="./resources/cat_purr_256.png" target="main_view">
+                <img src="./resources/cat_purr_64.png" alt="Кіт 6">
+            </a>
+        </li>
+    </ul>
+
+</body>
+</html>

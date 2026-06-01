@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My To Do List</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:600px;
+    margin:30px auto;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+}
+
+li:nth-child(odd){
+    background:#b7ddeb;
+}
+
+li:nth-child(even){
+    background:#a8d3e2;
+}
+
+.done{
+    background:#e5e5e5 !important;
+}
+
+.done .text{
+    text-decoration:line-through;
+}
+
+.icon{
+    margin-right:15px;
+}
+
+.text{
+    flex-grow:1;
+}
+
+.delete{
+    margin-left:auto;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>My To Do List</h1>
+
+<ul>
+
+<li>
+    <img class="icon" src="./resources/unchecked_16.png" alt="">
+    <span class="text">Hit the gym</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li class="done">
+    <img class="icon" src="./resources/checked_16.png" alt="">
+    <span class="text">Pay bills</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li>
+    <img class="icon" src="unchecked_16.png" alt="">
+    <span class="text">Meet John</span>
+    <img class="delete" src="arrow_16.png" alt="">
+</li>
+
+<li>
+    <img class="icon" src="./resources/unchecked_16.png" alt="">
+    <span class="text">Buy eggs</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li class="done">
+    <img class="icon" src="./resources/checked_16.png" alt="">
+    <span class="text">Read a book</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li>
+    <img class="icon" src="./resources/unchecked_16.png" alt="">
+    <span class="text">Organize office</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li>
+    <img class="icon" src="unchecked_16.png" alt="">
+    <span class="text">Eat dinner</span>
+    <img class="delete" src="arrow_16.png" alt="">
+</li>
+
+<li>
+    <img class="icon" src="./resources/unchecked_16.png" alt="">
+    <span class="text">Buy apples</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li>
+    <img class="icon" src="./resources/unchecked_16.png" alt="">
+    <span class="text">Meet George</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li>
+    <img class="icon" src="./resources/unchecked_16.png" alt="">
+    <span class="text">Feed the cat</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li class="done">
+    <img class="icon" src="./resources/checked_16.png" alt="">
+    <span class="text">Write a letter</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+<li>
+    <img class="icon" src="./resources/unchecked_16.png" alt="">
+    <span class="text">Run 1 km</span>
+    <img class="delete" src="./resources/arrow_16.png" alt="">
+</li>
+
+</ul>
+
+</div>
+
+</body>
+</html>

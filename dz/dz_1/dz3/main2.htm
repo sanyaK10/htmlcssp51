@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вертикальне меню</title>
+    <style>
+        .menu {
+            width: 250px;
+            background-color: #7b7b7b;
+            font-family: sans-serif;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;  
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .menu-item:hover {
+            background-color: #4a4a4a; 
+        }
+        .icon {
+            width: 25px;         
+            height: 25px;         
+            object-fit: contain;   
+            margin-right: 15px;    
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#" class="menu-item"><img src="./resources/edit.png" class="icon" alt=""> EDIT</a>
+        
+        <a href="#" class="menu-item"><img src="./resources/favorites.png" class="icon" alt=""> FAVORITES</a>
+        
+        <a href="#" class="menu-item"><img src="./resources/history.png" class="icon" alt=""> HISTORY</a>
+        
+        <a href="#" class="menu-item"><img src="./resources/security.png" class="icon" alt=""> SECURITY</a>
+        
+        <a href="#" class="menu-item"><img src="./resources/settings.png" class="icon" alt=""> SETTINGS</a> 
+    </div>
+</body>
+</html>

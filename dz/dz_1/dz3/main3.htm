@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        body {
+            padding: 10px;
+            background: #f4f4f4;
+        }
+        .wrapper {
+            width: 800px;
+            margin: 0 auto;
+        }
+        header, nav, footer, .aside-1, .aside-2, main, .aside-3 {
+            background: #883058;
+            padding: 15px;
+            margin-bottom: 5px;
+        }
+        nav, footer {
+            background: #61183c;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .col-left {
+            float: left;
+            width: 20%;
+        }
+        main {
+            float: left;
+            width: 58%;
+            margin: 0 2%;
+            background: #b0537e;
+            padding: 10px;
+        }
+        .section {
+            background: #d181a7;
+            padding: 15px;
+            margin-top: 10px;
+        }
+        .aside-3 {
+            float: left;
+            width: 18%;
+            height: 124px;
+            padding-top: 35px;
+        }
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header>HEADER</header>
+    <nav>MENU</nav>
+
+    <div class="row">
+        <div class="col-left">
+            <aside class="aside-1">ASIDE 1</aside>
+            <aside class="aside-2">ASIDE 2</aside>
+        </div>
+
+        <main>
+            MAIN CONTENT
+            <section class="section">SECTION 1</section>
+            <section class="section">SECTION 2</section>
+        </main>
+
+        <aside class="aside-3">ASIDE 3</aside>
+    </div>
+
+    <footer>FOOTER</footer>
+</div>
+
+</body>
+</html>

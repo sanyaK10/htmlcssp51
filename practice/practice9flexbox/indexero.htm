@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color:white;
+            margin:4px;
+            padding:5px;
+            text-align:center;
+        }
+        #tab1{
+            background-color: darkgrey;
+        }
+        .container-for-text-and-images{
+            background-color: darkgrey;
+            overflow:auto;
+            width:1500px;
+            justify-content:space-around;
+        }
+        a{
+            width:30px;
+            height:20px;
+            display: flexbox;
+            flex-direction: column;
+        }
+        .awithouta{
+            background-color: black;
+            border:none;
+            /*я взяв чорний бо види сірого надто зливались,тому якщо у вас темний фон екрана підставте білий*/
+            animation-name: notactivetabs;
+            animation-duration: 2s;            
+            animation-iteration-count: infinite; 
+            animation-play-state: paused;      
+            transition: transform 0.3s ease;
+        }
+        .awithouta:hover {
+            animation-play-state: running;
+        }
+        @keyframes notactivetabs {
+            from{
+                background-color: black;
+            }
+            to{
+            background-color: darkgrey;
+            }
+        }
+        .textik{
+            width:400px;
+            height: 310px;
+            float:left;
+        }
+        #tab1{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-for-text-and-images">
+
+        <div class="sidebar">
+            <a id="tab1" href="#">Tab1</a>
+            <a class="awithouta" href="#">Tab2</a>
+            <a class="awithouta" href="#">Tab3</a>
+        </div>
+    
+        <div class="textik">
+            <img src="./gmc-savana-06.jpg" alt="">
+            <p>Header 1</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolore harum velit debitis quod voluptatibus?</p>
+        </div>
+
+        <div class="textik">
+            <img src="./gmc-savana-06.jpg" alt="">
+            <p>Header 2</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat dolore error similique, repellat porro!</p>
+        </div>
+
+        <div class="textik">
+            <img src="./gmc-savana-06.jpg" alt="">
+            <p>Header 3</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque dolorum vero numquam repellat quis.</p>
+        </div>
+    </div>
+</body>
+</html>

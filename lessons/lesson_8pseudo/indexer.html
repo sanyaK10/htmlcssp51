@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            box-sizing:border-box;
+        }
+        .demo::first-line{
+            color:#f38a89;
+            font-family:'Courier New', Courier, monospace;
+            text-shadow:2px 2px 15px black;
+        }
+        .demo::first-letter{
+            font-size: 1em;
+            border:1px black dotted;
+        }
+        .demo::selection{
+            color:#ffdd7e;
+            background-color: #7471ff;
+            background-image: url();
+            text-shadow: 1px 5px 1px #a0aa5f;
+        }
+        a{
+            display:block;
+            font-size:2em;
+            margin:15px;
+        }
+        section{
+            padding:0.5em;
+            margin:0.7em;
+            border:black solid 2px;
+            border-radius:5px;
+        }
+        p:first-child{
+            text-align:center;
+            text-transform:uppercase;
+        }
+        p:last-child{
+            margin-top:0.3em;
+            font-size:0.7em;
+            font-family:'Courier New', Courier, monospace;
+        }
+        p:nth-child(2){
+            padding:0.8em;
+            text-indent:0.5em;
+        }
+
+        p:nth-child(-2){
+            padding:0.8em;
+            text-indent:0.5em;
+        }
+        table,td{
+            border:1px black solid;
+            border-collapse: collapse;
+        }
+        td{
+            padding:0.75px;
+            border-right:0;
+            border-left:0;
+        }
+        tr:nth-child(odd){
+            /* background-color: aliceblue; */
+            animation:even-rows 5s infinite cubic-bezier(1,0.1,1,-0.14)alternate-reverse;
+        }
+        tr:nth-child(even){
+            animation:even-rows 5s infinite cubic-bezier(1,0.1,1,-0.14)alternate-reverse;
+        }
+        @keyframes odd-rows{
+            from{
+                background-color: white;
+            }
+            50%{
+                background-color: aquamarine;
+            }
+            to{
+                background-color: white;
+            }
+        }
+        @keyframes odd-rows{
+            from{
+                background-color: aquamarine;
+            }
+            50%{
+                background-color: white;
+            }
+            to{
+                background-color: aquamarine;
+            }
+        }
+
+        article:only-child{
+            background-color: #f38b89ad;
+        }
+        .menu{
+            list-style-type:none;
+        }
+        .menu-item:not(:last-child){
+            border-bottom:1px black solid;
+            margin-bottom:5px;
+        }
+        #section3{
+            display:none;
+        }
+        #section:target{
+            display:block;
+            box-shadow:5px 5px 15px #f38a89;
+        }
+    </style>
+</head>
+<body>
+    <h1>Псевдоелементи та псевдокласи</h1>
+
+    <ul class="menu">
+        <li class="menu-item">Головна</li>
+        <li class="menu-item">Про нас </li>
+        <li class="menu-item">Послуги</li>
+        <li class="menu-item">Контакти</li>
+    </ul>
+
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus tempore qui aperiam suscipit incidunt dolor placeat voluptatibus! Minima, maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet alias voluptas doloremque sunt suscipit placeat? Amet corrupti vitae eius quod reiciendis natus modi quia beatae blanditiis, labore ipsa, debitis fugit optio architecto provident. Fugiat, nobis. </p>
+
+    <a href="#section3">link</a>
+
+    <section>
+        <!-- <h3>Lorem ipsum dolor sit.</h3> -->
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aperiam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odit quaerat nisi explicabo commodi at, maiores beatae magni dolore quod porro! Blanditiis sequi velit alias nobis. Temporibus ducimus totam, voluptatem illum placeat, voluptate, animi cum exercitationem repellendus consectetur esse earum quia. Neque, labore numquam! Aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit magni laborum possimus eius! Facilis vel corrupti ut quidem pariatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laborum laboriosam?</p>
+            <img src="./edit.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iure?</p>
+        </article>
+    </section>
+    <section>
+        <!-- <h3>Lorem ipsum dolor sit.</h3> -->
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aperiam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odit quaerat nisi explicabo commodi at, maiores beatae magni dolore quod porro! Blanditiis sequi velit alias nobis. Temporibus ducimus totam, voluptatem illum placeat, voluptate, animi cum exercitationem repellendus consectetur esse earum quia. Neque, labore numquam! Aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit magni laborum possimus eius! Facilis vel corrupti ut quidem pariatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laborum laboriosam?</p>
+            <img src="./edit.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iure?</p>
+        </article>
+    </section>
+    <section id="section3">
+        <!-- <h3>Lorem ipsum dolor sit.</h3> -->
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aperiam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odit quaerat nisi explicabo commodi at, maiores beatae magni dolore quod porro! Blanditiis sequi velit alias nobis. Temporibus ducimus totam, voluptatem illum placeat, voluptate, animi cum exercitationem repellendus consectetur esse earum quia. Neque, labore numquam! Aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit magni laborum possimus eius! Facilis vel corrupti ut quidem pariatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laborum laboriosam?</p>
+            <img src="./edit.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iure?</p>
+        </article>
+    </section>
+    <section>
+        <!-- <h3>Lorem ipsum dolor sit.</h3> -->
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aperiam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odit quaerat nisi explicabo commodi at, maiores beatae magni dolore quod porro! Blanditiis sequi velit alias nobis. Temporibus ducimus totam, voluptatem illum placeat, voluptate, animi cum exercitationem repellendus consectetur esse earum quia. Neque, labore numquam! Aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit magni laborum possimus eius! Facilis vel corrupti ut quidem pariatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laborum laboriosam?</p>
+            <img src="./edit.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iure?</p>
+        </article>
+    </section>
+
+
+    <table>
+        <tr><!--Table row-->
+            <td>
+                cell 1
+            </td>
+            <th> cell</th>
+        </tr> 
+        <tr><!--Table row-->
+            <td>
+                cell 1
+            </td>
+            <th> cell</th>
+        </tr>
+        <tr><!--Table row-->
+            <td>
+                cell 1
+            </td>
+            <th>cell</th>
+        </tr>
+        <tr><!--Table row-->
+            <td>
+                cell 1
+            </td>
+            <th> cell</th>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>

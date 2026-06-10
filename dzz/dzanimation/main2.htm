@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Стулки</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f0f0f0;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    position:relative;
+    width:600px;
+    height:250px;
+    overflow:hidden;
+}
+
+.text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:40px;
+    font-weight:bold;
+    z-index:1;
+}
+
+.left,
+.right{
+    position:absolute;
+    top:0;
+    width:50%;
+    height:100%;
+    background:#8a1b6b;
+    border:4px solid #5d0e46;
+    box-sizing:border-box;
+    z-index:2;
+}
+
+.left{
+    left:0;
+    transform-origin:left center;
+    transition:transform 2s;
+}
+
+.right{
+    right:0;
+    transform-origin:right center;
+    transition:transform 2s;
+}
+
+.container:hover .left{
+    transform:perspective(600px) rotateY(70deg);
+}
+
+.container:hover .right{
+    transform:perspective(600px) rotateY(-70deg);
+}
+
+.container:not(:hover) .left,
+.container:not(:hover) .right{
+    transition:transform 0s;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="text">HELLO</div>
+
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+
+</body>
+</html>

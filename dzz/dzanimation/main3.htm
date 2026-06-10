@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 3</title>
+
+<style>
+body{
+    margin:0;
+    background:#fff;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    width:800px;
+    margin:50px auto;
+}
+
+.block{
+    display:flex;
+    width:100%;
+    height:200px;
+}
+
+.text{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    background:white;
+    transition:0.3s;
+}
+
+.image{
+    width:50%;
+    overflow:hidden;
+}
+
+.image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:1s;
+}
+
+.block:hover .text{
+    background:lightgray;
+}
+
+.block:hover img{
+    transform:scale(1.2);
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="block">
+        <div class="text">HELLO, WORLD!</div>
+        <div class="image">
+            <img src="./cat_tied_256.png" alt="">
+        </div>
+    </div>
+
+    <div class="block reverse">
+        <div class="text">HELLO, WORLD!</div>
+        <div class="image">
+            <img src="cat_tied_256.png" alt="">
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="text">HELLO, WORLD!</div>
+        <div class="image">
+            <img src="./cat_tied_256.png" alt="">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

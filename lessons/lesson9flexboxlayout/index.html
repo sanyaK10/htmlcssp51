@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            box-sizing:border-box;
+        }
+        .flex-container{
+            background-color: antiquewhite;
+            border:black solid 1px;
+            border-radius:15px;
+            display:flex;
+            padding:0.7em;
+            margin:0.3em;
+            /* flex-direction:column; */
+            gap:5%;
+            flex-wrap:wrap;
+            justify-content:flex-start;
+            
+
+        }
+        img:last-child{
+            align-self:flex-end;
+        }
+        /* img{
+            width:20%;
+            min-width:100px;
+        } */
+        /* img:first-child{
+            order:3;
+        }
+        img:first-child,img:last-child{
+            flex-grow:1;
+        }
+        img:nth-child(2){
+            flex-grow: 2;
+        } */
+        .flex-grow-container{
+            display:flex;
+            background-color: antiquewhite;
+            border:black solid 1px;
+            border-radius:15px;
+        }
+
+        .div-1,.div-2{
+            height:50px;
+        }
+        .div-1{
+            flex-grow:1;
+            background-color: aquamarine;
+        }
+        .div-2{
+            flex-grow:2;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <img src="./-324776464 (1).jpg" alt="">
+        <img src="./cat_box_64.png" alt="">
+        <img src="./edit.png" alt="">
+    </div>
+    <div class="flex-grow-container">
+        <div class="div-1">flex-grow:1</div>
+        <div class="div-2">flex-grow:2</div>
+        <div class="div-3">flex-grow:1</div>
+    </div>
+</body>
+</html>

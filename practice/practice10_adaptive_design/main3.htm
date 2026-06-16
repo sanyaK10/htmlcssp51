@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice 1</title>
+
+<style>
+
+body{
+    background-color: #ececec;
+    font-family: Arial;
+}
+
+.main{
+    width: 80%;
+    margin: auto;
+    background-color: #f3f3f3;
+    padding: 20px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.text{
+    width: 75%;
+}
+
+.menu{
+    width: 25%;
+}
+
+.block{
+    background-color: #c8d8ec;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.name{
+    background-color: #3c587b;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+.item{
+    padding: 10px;
+    border-top: 1px solid #b2c2d4;
+}
+
+h2{
+    margin-top: 0;
+}
+
+/* від 600 до 800 */
+@media (max-width:800px){
+
+    .main{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .block{
+        width: 50%;
+    }
+
+}
+
+/* менше 600 */
+@media (max-width:600px){
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .block{
+        width: 100%;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="main">
+
+    <div class="text">
+
+        <h2>Introduction</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus, molestias. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dolores, aliquam.
+        </p>
+
+        <h2>Additional information</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptate accusantium laboriosam, iure minima ducimus
+            molestiae officiis sed pariatur.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quisquam ipsam, placeat error maxime magnam molestiae.
+        </p>
+
+    </div>
+
+    <div class="menu">
+
+        <div class="block">
+
+            <div class="name">
+                Actions
+            </div>
+
+            <div class="item">
+                Integer ut magna cursus eros
+            </div>
+
+            <div class="item">
+                Fusce imperdiet sapien a sem
+            </div>
+
+            <div class="item">
+                Sed ac ligula in neque tincidunt
+            </div>
+
+        </div>
+
+        <div class="block">
+
+            <div class="name">
+                Plans
+            </div>
+
+            <div class="item">
+                Morbi at diam suscipit mauris
+            </div>
+
+            <div class="item">
+                Donec vel odio malesuada
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin:0;
+            box-sizing: border-box;
+        }
+        form{
+            width:80vw;
+            min-width:500px;
+            max-width:1200px;
+            border:solid black 2px;
+            border-radius:10px;
+            background-color:bisque;
+            margin:auto 0.5em;
+            padding:0.7em;
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            gap:0.4em;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <div>
+        <input type="text" placeholder="What are you looking for?">
+        <button type="submit">Search</button>
+        <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <form>
+        <div>
+            <label for="username">Ім'я користувача</label>
+            <br>
+            <input type="text" id="username" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <br>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Пароль</label>
+            <br>
+            <input type="password" id="password" required>
+        </div>
+        <div>
+            <label for="about">Про себе:</label>
+            <br>
+            <textarea id="about" rows="30" cols="10"></textarea>
+        </div>
+        <div>
+            <label for="agree">Згоден на обробу персональних даних</label>
+            <input type="checkbox" id="agree" required>
+        </div>
+        <div>
+            <legend>Стать:</legend>
+            <input type="radio" name="gender" value="male" id="genderM">
+            <label for="genderM">Чоловік</label>
+            <input type="radio" name="gender" value="female" id="genderF">
+            <label for="genderF">Жінка</label>
+            <input type="radio" name="gender" value="other" id="genderO">
+            <label for="genderO">Інше</label>
+        </div>
+        <div>
+            <label for="fav-pizza">Улюблена піца:</label>
+            <br>
+            <select id="fav-pizza">
+                <option value="margherita">Маргарита</option>
+                <option value="pepperoni">Пеппероні</option>
+                <option value="hawaiian">Гавайська</option>
+            </select>
+        </div>
+        <div>
+            <label for="fav-genre">Улюблений жанр:</label>
+            <br>
+            <input type="text" id="fav-genre" list="genres">
+            <datalist id="genres">
+                <option value="action">
+                <option value="shooter">
+                <option value="рогалики">
+            </datalist>
+        </div>
+        <div>
+            <label for="birth-date">Дата народження:</label>
+            <br>
+            <input type="date" name="birth-date" id="birth-date">
+        </div>
+        <div>
+            <label for="tall">Ваш зріст:</label>
+            <br>
+            <input type="number" name="tall" id="tall" min="1" max="300">
+        </div>
+        <div>
+            <button type="submit">Зареєстрватись</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+$primary-color: #0d84d1;
+$text-color: white;
+$background-color: #f5f5f5; 
+
+body {
+    background-color: $background-color;
+    margin: 0;
+}
+
+header {
+    background-color: $primary-color;
+    color: $text-color;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    min-height: 400px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: darken($primary-color, 15%);
+    color: $text-color;
+    text-align: center;
+    padding: 20px;
+}

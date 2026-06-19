@@ -1,0 +1,25 @@
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+header {
+  background-color: #0d84d1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  min-height: 400px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: rgb(8.5202702703, 86.5135135135, 136.9797297297);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}/*# sourceMappingURL=styles.css.map */

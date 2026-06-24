@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 5 - Завдання 1 (6 авторів)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #ededed;
+            padding: 30px 15px;
+        }
+        .title-page {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        /* Головна обгортка для карток */
+        .catalog-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+        /* Сама картка */
+        .photo-card {
+            position: relative;
+            width: 280px;
+            height: 380px;
+            overflow: hidden;
+            border-radius: 3px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+        }
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* Виїжджаюча плашка */
+        .info-panel {
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            color: #ffffff;
+            padding: 12px;
+            transition: bottom 0.3s ease;
+        }
+        .photo-card:hover .info-panel {
+            bottom: 0;
+        }
+        .info-panel h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .info-panel p {
+            font-size: 12px;
+            line-height: 1.4;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title-page">Famous Writers</h1>
+
+    <div class="catalog-wrapper">
+        
+        <div class="photo-card">
+            <img src="Oscar_Wilde_Sarony.jpg" alt="Oscar Wilde">
+            <div class="info-panel">
+                <h3>Oscar Wilde</h3>
+                <p>Irish poet and playwright. Famous for "The Picture of Dorian Gray" and brilliant wit.</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="WilliamWordsworth.jpg" alt="William Wordsworth">
+            <div class="info-panel">
+                <h3>William Wordsworth</h3>
+                <p>English Romantic poet who helped to launch the Romantic Age in English literature.</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="Cervantes_Jauregui.jpg" alt="Miguel de Cervantes">
+            <div class="info-panel">
+                <h3>Miguel de Cervantes</h3>
+                <p>Spanish writer widely regarded as the greatest novelist, creator of "Don Quixote".</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="Dickens_Gurney.jpg" alt="Charles Dickens">
+            <div class="info-panel">
+                <h3>Charles Dickens</h3>
+                <p>English writer and social critic. Created some of the world's best-known fictional characters.</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="Edgar_Allan_Poe.jpg" alt="Edgar Allan Poe">
+            <div class="info-panel">
+                <h3>Edgar Allan Poe</h3>
+                <p>American writer, poet and critic, best known for his poetry and short stories of mystery.</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="Anne_Hathaway.jpg" alt="Anne Hathaway">
+            <div class="info-panel">
+                <h3>Anne Hathaway</h3>
+                <p>The wife of William Shakespeare, the famous English poet and playwright.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

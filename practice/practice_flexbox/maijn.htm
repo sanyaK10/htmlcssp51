@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Tabs</title>
+
+<style>
+body{
+    background:#eee;
+    font-family:Arial;
+}
+
+.container{
+    display:flex;
+    width:900px;
+    margin:50px auto;
+}
+
+.tabs{
+    width:100px;
+}
+
+.tab{
+    background:#999;
+    color:white;
+    padding:20px;
+}
+
+.active{
+    background:#555;
+}
+
+.tab:hover{
+    background:#666;
+}
+
+.content{
+    background:#555;
+    padding:20px;
+    display:flex;
+    gap:20px;
+    flex:1;
+}
+
+.block{
+    flex:1;
+    color:white;
+}
+
+.block img{
+    width:100%;
+}
+
+.block h3{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="tabs">
+        <div class="tab active">Tab 1</div>
+        <div class="tab">Tab 2</div>
+        <div class="tab">Tab 3</div>
+    </div>
+
+    <div class="content">
+
+        <div class="block">
+            <img src="./images.jpg">
+            <h3>Header 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="block">
+            <img src="./images.jpg">
+            <h3>Header 2</h3>
+            <p>Quisque id lectus et ipsum bibendum mattis vitae sagittis magna.</p>
+        </div>
+
+        <div class="block">
+            <img src="./images.jpg">
+            <h3>Header 3</h3>
+            <p>Mauris nec purus nec ligula euismod convallis.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

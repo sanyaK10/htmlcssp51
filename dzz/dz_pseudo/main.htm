@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        div{
+            max-width: 100%;
+            max-height: 80vh;
+            overflow: auto;
+        }
+
+        table{
+            border-collapse: collapse;
+            min-width: 900px;
+        }
+
+        th, td{
+            padding: 15px 25px;
+            text-align: center;
+        }
+
+        tr:first-child th{
+            background-color: lightblue;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        tr td:first-child{
+            background-color: lightblue;
+            font-weight: bold;
+            position: sticky;
+            left: 0;
+            z-index: 1;
+        }
+
+        tr:first-child th:first-child{
+            left: 0;
+            z-index: 3;
+        }
+
+        tr:nth-child(even) td:not(:first-child){
+            background-color: #ececec;
+        }
+
+        tr:nth-child(odd) td:not(:first-child){
+            background-color: #dddddd;
+        }
+
+        tr:last-child td{
+            border-bottom: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <table>
+        <tr>
+            <th></th>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+        </tr>
+
+        <tr>
+            <td>Line 1</td>
+            <td>23</td>
+            <td>123</td>
+            <td>43</td>
+            <td>12</td>
+            <td>76</td>
+        </tr>
+
+        <tr>
+            <td>Line 2</td>
+            <td>23</td>
+            <td>123</td>
+            <td>43</td>
+            <td>12</td>
+            <td>76</td>
+        </tr>
+
+        <tr>
+            <td>Line 3</td>
+            <td>34</td>
+            <td>63</td>
+            <td>25</td>
+            <td>7</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>Line 4</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>Line 5</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>Line 6</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>Line 7</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>Line 8</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>Line 9</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>Line 10</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+
+    </table>
+</div>
+
+</body>
+</html>

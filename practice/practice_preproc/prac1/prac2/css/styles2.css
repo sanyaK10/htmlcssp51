@@ -1,0 +1,35 @@
+.menu {
+  background-color: #333;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  position: relative;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+.menu a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #bfbfbf;
+}
+.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  background-color: #444;
+}
+.menu .submenu li {
+  width: 100%;
+}/*# sourceMappingURL=styles2.css.map */

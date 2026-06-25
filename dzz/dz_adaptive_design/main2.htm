@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Article</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cat-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 250px;
+            grid-template-areas:
+                "title images"
+                "p1 images"
+                "p2 images"
+                "p3 images";
+            gap: 20px 40px;
+        }
+
+        h1 {
+            grid-area: title;
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .text-p1 {
+            grid-area: p1;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .text-p2 {
+            grid-area: p2;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .text-p3 {
+            grid-area: p3;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .images-wrapper {
+            grid-area: images;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-card {
+            background-color: #3a5b77;
+            border-radius: 4px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .image-caption {
+            color: #ffffff;
+            font-size: 11px;
+            padding: 10px;
+        }
+        @media (max-width: 800px) {
+            .cat-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "title"
+                    "p1"
+                    "images"
+                    "p2"
+                    "p3";
+            }
+
+            .images-wrapper {
+                flex-direction: row;
+            }
+
+            .image-card {
+                flex: 1;
+            }
+        }
+        @media (max-width: 600px) {
+            .images-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cat-container">
+        <h1>Cat</h1>
+        
+        <div class="text-p1">
+            The cat (Felis catus) is a small carnivorous mammal. It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family. The cat is either a house cat, kept as a pet, or a feral cat, freely ranging and avoiding human contact.[cite: 2] A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.[cite: 2]
+        </div>
+
+        <div class="images-wrapper">
+            <div class="image-card">
+                <img src="./resources/cat1.jpg" alt="Tabby cat">
+                <div class="image-caption">A Tabby cat in snowy weather</div>
+            </div>
+            <div class="image-card">
+                <img src="./resources/cat2.jpg" alt="Cat tongue">
+                <div class="image-caption">The hooked papillae on a cat's tongue act like a hairbrush to help clean and detangle fur[cite: 2]</div>
+            </div>
+        </div>
+
+        <div class="text-p2">
+            Cats are similar in anatomy to the other felid species, with a strong flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing small prey. They are predators who are most active at dawn and dusk (crepuscular). Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. Compared to humans, they see better in the dark (they see in near total darkness) and have a better sense of smell, but poorer color vision. Cats, despite being solitary hunters, are a social species. Cat communication includes the use of vocalizations including mewing, purring, trilling, hissing, growling and grunting as well as cat-specific body language.[cite: 2] Cats also communicate by secreting and perceiving pheromones.[cite: 2]
+        </div>
+
+        <div class="text-p3">
+            Female domestic cats can have kittens from spring to late autumn, with litter sizes ranging from two to five kittens. Domestic cats can be bred and shown as registered pedigreed cats, a hobby known as cat fancy. Failure to control the breeding of pet cats by spaying and neutering, as well as abandonment of pets, has resulted in large numbers of feral cats worldwide, contributing to the extinction of entire bird species, and evoking population control.[cite: 2]
+        </div>
+    </div>
+</body>
+</html>

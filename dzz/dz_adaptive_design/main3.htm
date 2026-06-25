@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3 - Mail Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e5e5e5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .mail-window {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .header-logo {
+            font-weight: bold;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .header-user {
+            font-size: 12px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .main-layout {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            padding: 20px 0;
+            border-right: 1px solid #eaeaea;
+            flex-shrink: 0;
+        }
+
+        .nav-item {
+            padding: 12px 20px;
+            color: #333;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+        }
+
+        .nav-icon {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+        }
+
+        .nav-item-active {
+            color: #d9534f;
+            background-color: #fcf1f1;
+        }
+
+        .mail-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mail-row {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            border-bottom: 1px solid #eaeaea;
+            gap: 15px;
+        }
+
+        .star {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .clip-icon {
+            width: 14px;
+            height: 14px;
+            object-fit: contain;
+        }
+
+        .mail-content {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            gap: 15px;
+            min-width: 0;
+        }
+
+        .mail-top-line {
+            display: contents;
+        }
+
+        .mail-sender {
+            width: 160px;
+            font-size: 13px;
+            color: #333;
+            flex-shrink: 0;
+        }
+
+        .mail-subject {
+            flex: 1;
+            font-size: 13px;
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .mail-preview {
+            color: #999;
+        }
+
+        .mail-date {
+            width: 80px;
+            text-align: right;
+            font-size: 12px;
+            color: #777;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+        }
+
+        @media (max-width: 800px) {
+            .mail-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .mail-top-line {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .mail-sender {
+                width: auto;
+            }
+
+            .mail-date {
+                width: auto;
+            }
+
+            .mail-subject {
+                white-space: normal;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .sidebar {
+                width: 60px;
+            }
+
+            .nav-text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mail-window">
+        <div class="header">
+            <div class="header-logo">
+                <img src="./resources/mail.png" class="logo-icon" alt="Mail Icon">
+                MY MAIL
+            </div>
+            <div class="header-user">user@mymail.com</div>
+        </div>
+        
+        <div class="main-layout">
+            <div class="sidebar">
+                <div class="nav-item nav-item-active">
+                    <img src="./resources/incom.png" class="nav-icon" alt="Incoming">
+                    <span class="nav-text">Incoming</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./resources/outcom.png" class="nav-icon" alt="Outgoing">
+                    <span class="nav-text">Outgoing</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./resources/draft.png" class="nav-icon" alt="Drafts">
+                    <span class="nav-text">Drafts</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./resources/spam.png" class="nav-icon" alt="Spam">
+                    <span class="nav-text">Spam</span>
+                </div>
+            </div>
+            
+            <div class="mail-list">
+                <div class="mail-row">
+                    <img src="./resources/star1.svg" class="star" alt="Star">
+                    <div class="mail-content">
+                        <div class="mail-top-line">
+                            <div class="mail-sender">me, Alex</div>
+                            <div class="mail-date">
+                                <img src="./resources/attach_26.png" class="clip-icon" alt="Attachment">
+                                12 apr.
+                            </div>
+                        </div>
+                        <div class="mail-subject">
+                            Trip to South America <span class="mail-preview">- Suspendisse ut sapien non arcu rutrum t...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mail-row">
+                    <img src="./resources/star1.svg" class="star" alt="Star">
+                    <div class="mail-content">
+                        <div class="mail-top-line">
+                            <div class="mail-sender">me, John</div>
+                            <div class="mail-date">
+                                <img src="./resources/attach_26.png" class="clip-icon" alt="Attachment">
+                                12 apr.
+                            </div>
+                        </div>
+                        <div class="mail-subject">
+                            Santa Monica trip <span class="mail-preview">- Cras accumsan lacus quis urna ultricies, vel f...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mail-row">
+                    <img src="./resources/star1.svg" class="star" alt="Star">
+                    <div class="mail-content">
+                        <div class="mail-top-line">
+                            <div class="mail-sender">me, John, Alex</div>
+                            <div class="mail-date">11 apr.</div>
+                        </div>
+                        <div class="mail-subject">
+                            Birthday party <span class="mail-preview">- 20.04.2019</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mail-row">
+                    <img src="./resources/star2.svg" class="star" alt="Star">
+                    <div class="mail-content">
+                        <div class="mail-top-line">
+                            <div class="mail-sender" style="color: #000; font-weight: bold;">Mari White</div>
+                            <div class="mail-date">
+                                <img src="./resources/attach_26.png" class="clip-icon" alt="Attachment">
+                                10 apr.
+                            </div>
+                        </div>
+                        <div class="mail-subject">
+                            Report (march 2019)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

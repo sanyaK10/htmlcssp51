@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        .container {
+            background-color: white;
+            width: 650px;
+            padding: 30px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        h3 {
+            font-size: 14px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .input-base {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 160px;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .input-valid {
+            border-color: #4CAF50;
+            color: #4CAF50;
+        }
+
+        .input-invalid {
+            border-color: #F44336;
+            color: #F44336;
+        }
+
+        .toggle-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+        }
+
+        .toggle {
+            width: 36px;
+            height: 18px;
+            border-radius: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .toggle-on {
+            background-color: #4CAF50;
+        }
+
+        .toggle-off {
+            background-color: #F44336;
+        }
+
+        .circle {
+            width: 14px;
+            height: 14px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+        }
+
+        .toggle-on .circle {
+            right: 2px;
+        }
+
+        .toggle-off .circle {
+            left: 2px;
+        }
+
+        .radio-box {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 13px;
+        }
+
+        .radio {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        .radio-active {
+            border-color: #4CAF50;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-green {
+            background-color: #4CAF50;
+        }
+
+        .btn-green-hover {
+            background-color: #388E3C;
+        }
+
+        .btn-red {
+            background-color: #F44336;
+        }
+
+        .btn-red-hover {
+            background-color: #D32F2F;
+        }
+
+        .btn-gray {
+            background-color: #9E9E9E;
+            cursor: not-allowed;
+        }
+
+        .btn-round {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Inputs</h3>
+        <div class="row">
+            <input type="text" class="input-base" placeholder="Enter some text">
+            <input type="text" class="input-base input-valid" value="valid text         ✓">
+            <input type="text" class="input-base input-invalid" value="invalid text       ✗">
+        </div>
+        <h3>Check boxes</h3>
+        <div class="row">
+            <div class="toggle-box">
+                <div class="toggle toggle-on"><div class="circle"></div></div>
+                <span>Subscribe</span>
+            </div>
+            <div class="toggle-box">
+                <div class="toggle toggle-off"><div class="circle"></div></div>
+                <span>Subscribe</span>
+            </div>
+        </div>
+
+        <h3>Radio buttons</h3>
+        <div class="row">
+            <span style="font-size: 13px;">Gender:</span>
+            <div class="radio-box">
+                <div class="radio radio-active"><div class="dot"></div></div>
+                <span>Male</span>
+            </div>
+            <div class="radio-box">
+                <div class="radio"></div>
+                <span>Female</span>
+            </div>
+        </div>
+
+        <h3>Buttons</h3>
+        <div class="row">
+            <button class="btn btn-green">Active</button>
+            <button class="btn btn-green-hover">Hover</button>
+            <button class="btn btn-red">Danger</button>
+            <button class="btn btn-red-hover">Hover</button>
+            <button class="btn btn-gray">Disabled</button>
+            <button class="btn btn-green btn-round">+</button>
+            <button class="btn btn-red btn-round">-</button>
+        </div>
+
+        <h3>Text area</h3>
+        <textarea placeholder="Enter some text..."></textarea>
+    </div>
+
+</body>
+</html>

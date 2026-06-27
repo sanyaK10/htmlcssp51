@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+@import "buttons";
+@import "cards";
+
+body {
+    font-family: $font;
+    background: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    @include flex-center;
+    height: 100vh;
+}

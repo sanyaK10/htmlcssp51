@@ -1,0 +1,30 @@
+.product-card {
+    width: 250px;
+    padding: $spacer;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    h2 {
+        margin: 10px 0;
+    }
+
+    p {
+        color: green;
+        font-size: 20px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+}

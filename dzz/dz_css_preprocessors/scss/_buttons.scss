@@ -1,0 +1,22 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-buy {
+    @extend .btn;
+    background: $success;
+}
+
+.btn-cancel {
+    @extend .btn;
+    background: $danger;
+}
+
+.btn-info {
+    @extend .btn;
+    background: $primary;
+}
